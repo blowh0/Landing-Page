@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(217, 216, 212);
+  font-family: Monospace, sans-serif;
+  font-size: 26px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(217, 216, 212);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 200px;
+  margin: 10px;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: #953f35;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-link:hover {
+  color: #44130f;
+}
+
+main {
+  margin-top: 0px; /* Compensar por la posición fija del header */
+}
+
+#features, #how-it-works, #cds-and-vinyls {
+  padding: 20px;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 250px auto 90px auto;
+  max-width: 300px;
+}
+
+#email {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+}
+
+#submit {
+  background-color: #953f35;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  background-color: #44130f;
+}
+
+#video {
+  width: 500px;
+  max-width: 560px;
+  height: 260px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery div {
+  margin: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+button {
+  background-color: #953f35;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #44130f;
+}
+
+@media (max-width: 768px) {
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery div {
+    width: 80%;
+  }
+}
